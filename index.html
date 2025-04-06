@@ -23,6 +23,11 @@
             </div>
             <div class="theme-toggle"></div>
         </nav>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         
         <section class="hero">
             <div class="hero-content animate-ready">
@@ -160,6 +165,12 @@
                                 loader.classList.add('hidden');
                             }, 1000);
                         });
+                        const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
                     </script>
     <script src="script.js"></script>
     <footer>pratishtha_somani | copyright@2025 </footer>
