@@ -4,7 +4,9 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
+.hamburger {
+  display: none; /* Hidden on desktop */
+}
 body {
     background-color: #121222;
     color: #fff;
@@ -955,9 +957,13 @@ height: 50px;}
     .container {
       width: 100%;
       padding: 0 15px;
+         .hamburger {
+    display: block; /* Visible on mobile */
+  }
     }
     
-    .nav-menu {
+    .nav-menu { width: 20px;
+  height: 20px;
       flex-direction: column;
     }
   }
